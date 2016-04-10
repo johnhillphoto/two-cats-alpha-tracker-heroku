@@ -9,7 +9,7 @@ var alphaChecker = db.alphaChecker;
 
 //use Faker to create Employee names
 var employeeData =[];
-for (var i = 0; i < 20; i++) {
+for (var i = 0; i < 150; i++) {
   var newEmployee = {};
   newEmployee.firstName =faker.Name.firstName();
   newEmployee.lastName = faker.Name.lastName();

@@ -15,7 +15,7 @@ app.use('/api/employees', require('./routes/api/employeesAPI.js'));
 app.use('/api/products', require('./routes/api/productsAPI.js'));
 
 app.get('/', function(req, res, next){
-  res.sendFile(path.join(__dirname, '../browser/', 'index.html'));
+  res.sendFile(path.join(__dirname, '../browser/views/', 'index.html'));
 });
 
 //error handling
