@@ -12,22 +12,13 @@ var employeeSchema = mongoose.Schema({
   lastName: String
 });
 
-employeeSchema
-.virtual('name')
+employeeSchema.virtual('name')
    .get(function () {
    return this.firstName + ' ' + this.lastName;
 });
 employeeSchema.set('toObject', { getters: true });
 
-// employeeSchema.pre('save', function(next){
-//       var firstLetter = this.lastName.charAt(0);
-//       employeeAlphaCount[firstLetter] = true;
-//   next();
-// });//end pre
-
-
 var Employee = mongoose.model('employee', employeeSchema);
-
 
 //below sets up connect, checks for existence of connection first
 var _conn;

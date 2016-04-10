@@ -12,23 +12,19 @@
     <script src="browser/js/item.factory.js" defer></script>
     <script src="browser/js/item.controller.js" defer></script>
     <script src="browser/js/item.directive.js" defer></script>
-
-
   </head>
+
   <body ng-app="alphaApp">
-  <nav class="navbar navbar-inverse">
-    <ul class="nav nav-pills">
-        <li role="presentation" class="active center-vert-nav"><a href="/">Home</a></li>
-        <li role="presentation" class="active center-vert-nav"><a ui-sref="products">Products</a></li>
-        <li role="presentation" class="active center-vert-nav"><a ui-sref="employees">Employees</a></li>
+    <nav class="navbar navbar-inverse">
+      <ul class="nav nav-pills">
+          <li role="presentation" class="active center-vert-nav morePad"><a href="/">Home</a></li>
+          <li role="presentation" class="active center-vert-nav morePad"><a ui-sref="products">Products</a></li>
+          <li role="presentation" class="active center-vert-nav morePad"><a ui-sref="employees">Employees</a></li>
+          <li role="presentation" class="white center-vert-nav bigger centerText">Two Cats Alpha Tracker</li>
+      </ul>
+    </nav>
 
-
-        <li role="presentation" class="white center-vert-nav bigger">Two Cats Alpha Tracker</li>
-    </ul>
-  </nav>
-
-  <h2 class ="">Two Cats Alpha Tracker</h2>{{ testing}}
-  <ui-view></ui-view>
+    <ui-view></ui-view>
 
   </body>
 </html>

@@ -6,7 +6,6 @@ var Product = db.Product;
 var Employee = db.Employee;
 var alphaChecker = db.alphaChecker;
 
-
 //use Faker to create Employee names
 var employeeData =[];
 for (var i = 0; i < 150; i++) {
@@ -42,7 +41,6 @@ var dataMaker = function(data, item, next){
       console.log('seeded');
     });
 };
-
 
 dataMaker(employeeData, Employee);
 dataMaker(productData, Product);

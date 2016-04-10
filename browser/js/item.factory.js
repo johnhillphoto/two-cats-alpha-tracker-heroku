@@ -18,16 +18,10 @@ alphaApp.factory('itemFactory', function($http, $log){
     itemFactory.getIndex = function(category){
       return $http.get('/api/' + category + '/index')
       .then(function(res){
-        console.log("res", res.data);
         return res.data;
       }).catch($log.error);
     };//end getIndex
 
-    itemFactory.alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-
-
-
-
-
-return itemFactory;
+    // itemFactory.alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+  return itemFactory;
 });//end factory

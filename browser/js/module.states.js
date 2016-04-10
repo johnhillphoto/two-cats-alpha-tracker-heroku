@@ -5,7 +5,6 @@ alphaApp.config(function ($stateProvider) {
   $stateProvider.state('products', {
     url: '/products',
     template: '<item-directive></item-directive>',
-    controller: 'ItemCtrl',
     resolve: {
       alphabet: function (itemFactory, $stateParams) {
         return itemFactory.getIndex('products');
@@ -13,13 +12,16 @@ alphaApp.config(function ($stateProvider) {
       category: function(){
         return 'products';
       }
-    }//end resolve
+    },//end resolve
+    controller: function($scope, alphabet, category){
+         $scope.alphabet = alphabet;
+         $scope.category = category;
+       }
   });//end state
 
   $stateProvider.state('employees', {
     url: '/employees',
-    templateUrl: 'browser/views/items.html',
-    controller: 'ItemCtrl',
+    template: '<item-directive></item-directive>',
     resolve: {
       alphabet: function (itemFactory, $stateParams) {
         return itemFactory.getIndex('employees');
@@ -27,7 +29,11 @@ alphaApp.config(function ($stateProvider) {
       category: function(){
         return 'employees';
       }
-    }//end resolve
+    },//end resolve
+    controller: function($scope, alphabet, category){
+         $scope.alphabet = alphabet;
+         $scope.category = category;
+       }
   });//end state
 
 

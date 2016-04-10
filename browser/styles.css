@@ -1,3 +1,6 @@
+body{
+  color: rgba(0, 0, 0, 0.8);
+}
 .white {
   color:white;
 }
@@ -7,13 +10,14 @@
   color:blue;
   border-color: rgba(0, 0, 0, 0.2);;
   border-style: solid;
+  border-radius: 3px;
   border-width: 1px;
   float: left;
   background-color: rgb(220, 220, 220);
   margin: 5px;
   text-align: center;
   vertical-align: baseline;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 .flex{
   display: flex;
@@ -28,8 +32,27 @@
 }
 li {
   list-style-type: none;
-  font-size: 1.6em;
+  font-size: 1.3em;
 }
-ul {
+.topSpace {
   margin-top: 30px;
+}
+.centerText{
+  height: 51px;
+  line-height: 51px;
+  padding-left: 60px;
+}
+.morePad{
+  padding:3px;
+}
+.container{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.nav{
+  background-color: rgba(0, 120, 240, 0.4);;
+}
+h3{
+  margin-top: 10px;
+  margin-bottom: 10px
 }
