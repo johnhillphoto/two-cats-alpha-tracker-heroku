@@ -4,7 +4,7 @@ alphaApp.config(function ($stateProvider) {
 
   $stateProvider.state('products', {
     url: '/products',
-    templateUrl: 'browser/views/items.html',
+    template: '<item-directive></item-directive>',
     controller: 'ItemCtrl',
     resolve: {
       alphabet: function (itemFactory, $stateParams) {
