@@ -1,0 +1,14 @@
+<h3>Welcome to {{category}}</h3>
+<tabset vertical="true" ng-repeat="(key, value) in alphabet">
+   <tab heading="{{key}" class="twenty" ng-click="getByLetter(key)"><a ng-class="{ 'emptyAlpha': !{{value}}}" >{{key}}</a></tab>
+ </tabset>
+<br>
+<div class="clear container">
+
+<ul>
+  <li ng-repeat="item in items" class="well">
+    {{item.name}}
+  </li>
+</ul>
+
+</div>

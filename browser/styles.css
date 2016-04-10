@@ -1,0 +1,35 @@
+.white {
+  color:white;
+}
+.twenty{
+  width:10%;
+  height:35px;
+  color:blue;
+  border-color: rgba(0, 0, 0, 0.2);;
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  background-color: rgb(220, 220, 220);
+  margin: 5px;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: 1.8em;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.emptyAlpha {
+  color: rgba(100, 100, 100, 0.3);;
+  text-decoration: line-through;
+}
+.clear{
+  clear: both;
+}
+li {
+  list-style-type: none;
+  font-size: 1.6em;
+}
+ul {
+  margin-top: 30px;
+}

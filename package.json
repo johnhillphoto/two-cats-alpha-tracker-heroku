@@ -1,0 +1,22 @@
+{
+  "name": "two-cats-alpha-select",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "CONN=mongodb://localhost/twoCatsAlpha nodemon ./server/server.js",
+    "seed": "CONN=mongodb://localhost/twoCatsAlpha node ./seed/seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "Faker": "^0.7.2",
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "bluebird": "^3.3.4",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12"
+  }
+}

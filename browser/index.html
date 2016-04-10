@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Two Cats Alpha Tracker</title>
+    <link href="vendor/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="browser/styles.css" rel="stylesheet" />
+    <script src="vendor/angular/angular.js" defer></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js" defer></script>
+    <script src="browser/js/module.js" defer></script>
+    <script src="browser/js/module.states.js" defer></script>
+    <script src="browser/js/item.factory.js" defer></script>
+    <script src="browser/js/item.controller.js" defer></script>
+    <script src="browser/js/item.directive.js" defer></script>
+
+
+  </head>
+  <body ng-app="alphaApp">
+  <nav class="navbar navbar-inverse">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active center-vert-nav"><a href="/">Home</a></li>
+        <li role="presentation" class="active center-vert-nav"><a ui-sref="products">Products</a></li>
+        <li role="presentation" class="active center-vert-nav"><a ui-sref="employees">Employees</a></li>
+
+
+        <li role="presentation" class="white center-vert-nav bigger">Two Cats Alpha Tracker</li>
+    </ul>
+  </nav>
+
+  <h2 class ="">Two Cats Alpha Tracker</h2>{{ testing}}
+  <ui-view></ui-view>
+
+  </body>
+</html>
