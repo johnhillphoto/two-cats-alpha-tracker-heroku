@@ -1,1 +1,1 @@
-web: CONN=mongodb://localhost/twoCatsAlpha node ./server/server.js
+web: node ./server/server.js

@@ -27,7 +27,7 @@ function connect(){
   if(_conn)
     return _conn;
   _conn = new Promise(function(resolve, reject){
-    mongoose.connect(process.env.CONN, function(err){
+    mongoose.connect(process.env.CONN || process.env.MONGOLAB_URI, function(err){
       if(err)
         return reject('make sure mongo is running on this machine');
       resolve(mongoose.connection);

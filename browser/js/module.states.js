@@ -36,6 +36,9 @@ alphaApp.config(function ($stateProvider) {
        }
   });//end state
 
-
+  $stateProvider.state('home', {
+    url: '/',
+    template: '<h4>Choose Products or Employees above'
+  });//end state
 
 });
