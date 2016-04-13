@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "CONN=mongodb://localhost/twoCatsAlpha nodemon ./server/server.js",
-    "seed": "CONN=mongodb://localhost/twoCatsAlpha node ./seed/seed.js"
+    "start": "CONN=mongodb://localhost/twoCatsAlpha node ./server/server.js",
+    "seed": "CONN=mongodb://localhost/twoCatsAlpha node ./seed/seed.js",
+    "postinstall": "npm run seed"
   },
   "author": "",
   "license": "ISC",
