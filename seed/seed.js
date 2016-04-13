@@ -16,7 +16,7 @@ for (var i = 0; i < 150; i++) {
 }
 
 var productData =[
-  { name: 'Brush'},{ name: 'Heated Mat'},{ name: 'Bed'},{ name: 'Hairball Remedy'},{ name: 'Scratching Post'},{ name: 'Food Dish'},{ name: 'Catnip'},{ name: 'Collar'},{ name: 'Claw Trimmers'},{ name: 'Frontline'},{ name: 'Treats'},{ name: 'Fishing Pole Toy'},{ name: 'Laser Pointer'},{ name: 'Litter Box'},{ name: 'Litter Genie'},{ name: 'Clumping Litter'}, { name: 'Water Bowl'},{ name: 'Cat Food - Wet'},{ name: 'Cat Food - Dry'},{ name: 'Toy Mouse'},{ name: 'Ball Of Paper'}, { name: 'Grooming Scissors'}, { name: 'Pheasant Feather'}
+  { name: 'Brush'},{ name: 'Heated Mat'},{ name: 'Bed'},{ name: 'Hairball Remedy'},{ name: 'Scratching Post'},{ name: 'Food Dish'},{ name: 'Catnip'},{ name: 'Collar'},{ name: 'Claw Trimmers'},{ name: 'Frontline'},{ name: 'Treats'},{ name: 'Fishing Pole Toy'},{ name: 'Laser Pointer'},{ name: 'Litter Box'},{ name: 'Litter Genie'},{ name: 'Clumping Litter'}, { name: 'Water Bowl'},{ name: 'Cat Food - Wet'},{ name: 'Cat Food - Dry'},{ name: 'Toy Mouse'},{ name: 'Ball Of Paper'}, { name: 'Grooming Scissors'}, { name: 'Pheasant Feather'}, { name: 'Corrugated Scratcher'}, { name: 'Litter Scooper'}, { name: 'Carrier'}, { name: 'Food Storage Bin'}, { name: 'Shampoo'}, { name: 'Feliway'}, { name: 'Toothpaste'}, { name: 'Toothbrush'}, { name: 'Cosequin'}, { name: 'Kitten Formula'}, { name: 'Air Freshener'}
 ];
 
 //dataMaker creates emplyees or products from above arrays
@@ -40,6 +40,12 @@ var dataMaker = function(data, item, next){
     });
 };
 
-dataMaker(employeeData, Employee);
-dataMaker(productData, Product);
-// process.exit(0);
+dataMaker(employeeData, Employee)
+.then (function(){
+   return dataMaker(productData, Product);
+})
+.then(function(){
+  console.log('hello there');
+  process.exit(0);
+
+});
