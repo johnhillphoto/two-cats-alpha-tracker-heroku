@@ -27,6 +27,7 @@ var dataMaker = function(data, item, next){
     })
     .then (function(){
       var Promises = data.map(function(_thing){
+        console.log(_thing);
         return item.create(_thing);
       });
       return Promises;
@@ -36,9 +37,9 @@ var dataMaker = function(data, item, next){
     })
     .then (function(){
       console.log('seeded');
-      process.exit(0);
     });
 };
 
 dataMaker(employeeData, Employee);
 dataMaker(productData, Product);
+// process.exit(0);
