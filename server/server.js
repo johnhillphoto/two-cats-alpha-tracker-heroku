@@ -4,7 +4,7 @@ var fs = require('fs');
 var app = require('./app.js');
 
 
-var httpPort = process.env.port || 8080;
+var httpPort = process.env.PORT || 8080;
 
 var server = http.createServer(app).listen(httpPort);
 
