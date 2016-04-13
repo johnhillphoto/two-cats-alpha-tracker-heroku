@@ -16,10 +16,7 @@ for (var i = 0; i < 150; i++) {
 }
 
 var productData =[
-  { name: 'Brush'},{ name: 'Heated Mat'},{ name: 'Bed'},{ name: 'Hairball Remedy'},{ name: 'Scratching Post'},
-  { name: 'Food Dish'},{ name: 'Catnip'},{ name: 'Collar'},{ name: 'Claw Trimmers'},{ name: 'Frontline'},
-  { name: 'Treats'},{ name: 'Fishing Pole Toy'},{ name: 'Laser Pointer'},{ name: 'Litter Box'},{ name: 'Litter Genie'},{ name: 'Clumping Litter'}, { name: 'Water Bowl'},{ name: 'Cat Food - Wet'},
-  { name: 'Cat Food - Dry'},{ name: 'Toy Mouse'},{ name: 'Ball Of Paper'}, { name: 'Grooming Scissors'}, { name: 'Pheasant Feather'}
+  { name: 'Brush'},{ name: 'Heated Mat'},{ name: 'Bed'},{ name: 'Hairball Remedy'},{ name: 'Scratching Post'},{ name: 'Food Dish'},{ name: 'Catnip'},{ name: 'Collar'},{ name: 'Claw Trimmers'},{ name: 'Frontline'},{ name: 'Treats'},{ name: 'Fishing Pole Toy'},{ name: 'Laser Pointer'},{ name: 'Litter Box'},{ name: 'Litter Genie'},{ name: 'Clumping Litter'}, { name: 'Water Bowl'},{ name: 'Cat Food - Wet'},{ name: 'Cat Food - Dry'},{ name: 'Toy Mouse'},{ name: 'Ball Of Paper'}, { name: 'Grooming Scissors'}, { name: 'Pheasant Feather'}
 ];
 
 //dataMaker creates emplyees or products from above arrays
