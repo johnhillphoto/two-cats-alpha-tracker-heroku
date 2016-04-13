@@ -39,6 +39,7 @@ var dataMaker = function(data, item, next){
     })
     .then (function(){
       console.log('seeded');
+      process.exit(0);
     });
 };
 
