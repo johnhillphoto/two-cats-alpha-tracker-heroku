@@ -1,0 +1,2 @@
+- looks good
+- it is not common to use directives without isolate scopeUsually you need isolate scope in order to test.

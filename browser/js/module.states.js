@@ -6,11 +6,11 @@ alphaApp.config(function ($stateProvider) {
     url: '/products',
     template: '<item-directive></item-directive>',
     resolve: {
-      alphabet: function (itemFactory, $stateParams) {
+      alphabet: function (itemFactory) {
         return itemFactory.getIndex('products');
       },//end alphabet
       category: function(){
-        return 'products';
+        return 'products';//do you need this?
       }
     },//end resolve
     controller: function($scope, alphabet, category){
@@ -23,11 +23,11 @@ alphaApp.config(function ($stateProvider) {
     url: '/employees',
     template: '<item-directive></item-directive>',
     resolve: {
-      alphabet: function (itemFactory, $stateParams) {
+      alphabet: function (itemFactory) {
         return itemFactory.getIndex('employees');
       },//end alphabet
       category: function(){
-        return 'employees';
+        return 'employees';//again do you need it?
       }
     },//end resolve
     controller: function($scope, alphabet, category){

@@ -1,5 +1,5 @@
 alphaApp.factory('itemFactory', function($http, $log){
-  var itemFactory ={}
+  var itemFactory ={};
 
     itemFactory.getAll = function(){
       return $http.get('/api/products')
